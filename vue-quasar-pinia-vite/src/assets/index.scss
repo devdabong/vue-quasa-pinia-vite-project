@@ -1,0 +1,143 @@
+@charset "UTF-8";
+
+@import './reset.scss';
+
+$gray-10: #f2f4f8;
+$gray-90: #535353;
+
+/**
+* Common
+*/
+/*********************
+* 공통
+*********************/
+.title {
+  &-main {
+    margin-right: 30px;
+  }
+
+  &-page {
+    font-size: 2em;
+    font-weight: 900;
+    padding-bottom: 24px;
+  }
+
+  &-page-sub {
+    font-size: 1.3em;
+    font-weight: 700;
+    color: $gray-90;
+    padding-bottom: 24px;
+  }
+}
+
+.containter {
+  &-main {
+    background: $gray-10;
+    height: 100vh;
+  }
+}
+
+.wrapper {
+  &-main {
+    background: $gray-10;
+    padding: 24px 35px;
+    height: 100%;
+  }
+}
+
+// 공통 팝업
+.dialog {
+  // 메타데이터 팝업
+  &-metadata {
+    .table-area {
+      .content-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .top-left {
+          .main-title {
+            font-weight: 600;
+          }
+        }
+        .top-right {
+          display: flex;
+        }
+      }
+    }
+    .q-card {
+      width: 60%;
+    }
+  }
+}
+
+/*********************
+* Quasar 커스텀
+*********************/
+.q-field__bottom {
+  padding: 1px 12px 0;
+}
+.q-splitter__panel {
+  min-width: 200px;
+  width: 200px !important;
+}
+.q-textarea .q-field__control {
+  height: 100%;
+}
+
+/*********************
+* 서비스 디자인 > 온보드
+*********************/
+.splitter {
+  &-onboard {
+    background: #ffffff;
+    min-height: 90%;
+    .section {
+      &-import {
+        .card {
+          &-import {
+            height: 100%;
+            .top-right {
+              width: 100%;
+              display: flex-end;
+              padding: 0px 0px 15px 0px;
+              .input-url {
+                width: 50%;
+              }
+            }
+          }
+        }
+        .editor-onboard {
+          width: 100%;
+        }
+        .files {
+          overflow-y: scroll;
+          max-height: 270px;
+          .q-item {
+            word-wrap: break-word;
+          }
+        }
+      }
+    }
+
+    .form {
+      &-general {
+        display: inline-flex;
+      }
+    }
+
+    .button {
+      &-icon {
+        width: 150px;
+        height: 150px;
+        font-size: 2em;
+        border-radius: 100%;
+      }
+    }
+
+    .textarea {
+      &-description {
+        height: 100px;
+      }
+    }
+  }
+}
