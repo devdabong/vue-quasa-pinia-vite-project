@@ -1,0 +1,1 @@
+# vue-quasa-pinia-vite-project
